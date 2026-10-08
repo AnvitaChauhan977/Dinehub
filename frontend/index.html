@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DineHub - Smart Food Ordering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">🍴 Dine<span>Hub</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="orders.html">Orders</a>
+    <a href="profile.html">Profile</a>
+    <a href="login.html" id="authLink">Login</a>
+    <a class="cart-link" href="cart.html">🛒 <span id="cartCount">0</span></a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p class="eyebrow">SMART RESTAURANT & FOOD ORDERING</p>
+    <h1>Good food.<br><span>Good mood.</span></h1>
+    <p>Discover delicious meals, order in a few clicks and track your order from kitchen to doorstep.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="menu.html">Explore Menu</a>
+      <a class="btn secondary" href="#features">Why DineHub?</a>
+    </div>
+  </div>
+  <div class="hero-food">🍕</div>
+</section>
+
+<section class="section" id="features">
+  <div class="section-title"><p class="eyebrow">WHY DINEHUB</p><h2>Everything you need to order smarter</h2></div>
+  <div class="cards">
+    <article class="feature-card"><div>🔎</div><h3>Easy Search</h3><p>Find food by name and filter dishes by category.</p></article>
+    <article class="feature-card"><div>🛒</div><h3>Smart Cart</h3><p>Add your favourite dishes and review your order before checkout.</p></article>
+    <article class="feature-card"><div>📍</div><h3>Order Tracking</h3><p>See the current status of your placed orders.</p></article>
+    <article class="feature-card"><div>🤖</div><h3>AI Recommendations</h3><p>Get personalised food suggestions based on your preferences.</p></article>
+  </div>
+</section>
+
+<section class="section recommendation">
+  <div>
+    <p class="eyebrow">AI FOOD RECOMMENDATION</p>
+    <h2>Not sure what to eat?</h2>
+    <p>Tell DineHub what you're craving and get a quick recommendation.</p>
+    <button class="btn primary" onclick="getRecommendation()">Recommend a dish</button>
+  </div>
+  <div id="recommendationResult" class="recommendation-box">Your recommendation will appear here.</div>
+</section>
+</main>
+
+<footer><p>© 2026 DineHub. Smart food ordering platform.</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

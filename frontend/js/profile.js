@@ -1,0 +1,1 @@
+const u=getUser();document.getElementById("profileInfo").innerHTML=u?`<h2>${u.name}</h2><p>Email: ${u.email}</p><p>Role: ${u.role||"customer"}</p>`:`<p>Please login to view your profile.</p>`;
